@@ -30,7 +30,7 @@ def key_pressed(event):
         paused=True
         update=complex(input("Complex number: "))
     elif event.key=="R":
-        size(600,600)
+        size(window.x,window.y)
         scale=orig_scale
     elif event.key=="S":
         scale=orig_scale
