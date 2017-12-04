@@ -70,8 +70,8 @@ def draw():
             line((5,y),(-5,y))
     if not paused and update==None:
         comp=complex(mouse_x-trans.x,-mouse_y+trans.y)
-        if update!=None:
-            comp=update*scale
+    if update!=None:
+        comp=update*scale
     fill(255,255,0)
     ellipse((comp.real,-comp.imag),5,5)
     comps=zeta(comp/scale,201)
